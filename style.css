@@ -95,8 +95,3 @@ button {
 .equal:active {
     background-color: deepskyblue;
 }
-
-#last-row .operand {
-    flex: 2;
-    padding-right: 5px;
-}

@@ -56,6 +56,13 @@ function launch() {
             case "AC":
                 reset();
                 return;
+            case "Backspace":
+                if (screen.textContent.length == 1) {
+                    screen.textContent = "0";
+                } else {
+                    screen.textContent = screen.textContent.slice(0, -1);
+                }
+                break;
             case "%":
                 screen.textContent = operate(
                     parseFloat(screen.textContent),
