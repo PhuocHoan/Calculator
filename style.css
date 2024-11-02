@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(240, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#calculator {
+    background-color: black;
+    border: 10px solid rgb(47, 47, 47);
+    border-radius: 4px;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2px;
+}
+
+#screen {
+    background-color: #b2b9b7;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    margin: 5px;
+    font-size: 80px;
+    flex: 1;
+    font-weight: 500;
+}
+
+#first-row,
+#second-row,
+#third-row,
+#fourth-row,
+#last-row {
+    flex: 1;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap: 2px;
+}
+
+button {
+    font-size: 30px;
+    flex: 1;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+#first-row button,
+.operator {
+    background-color: gray;
+}
+
+#first-row button:hover,
+.operator:hover {
+    background-color: darkgrey;
+}
+
+#first-row button:active,
+.operator:active {
+    background-color: gray;
+}
+
+.operand,
+.decimal {
+    background-color: lightgrey;
+}
+
+.operand:hover,
+.decimal:hover {
+    background-color: rgb(164, 163, 163);
+}
+
+.operand:active,
+.decimal:active {
+    background-color: lightgrey;
+}
+
+.equal {
+    background-color: deepskyblue;
+}
+
+.equal:hover {
+    background-color: dodgerblue;
+}
+
+.equal:active {
+    background-color: deepskyblue;
+}
+
+#last-row .operand {
+    flex: 2;
+    padding-right: 5px;
+}
